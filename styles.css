@@ -177,6 +177,39 @@ body::before {
   gap: 12px;
 }
 
+.quick-registration {
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.quick-registration-title {
+  text-align: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 1000;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #fff3d2;
+  text-shadow: 0 0 12px rgba(245,193,93,.32);
+}
+
+.quick-registration-link {
+  display: block;
+  text-decoration: none;
+}
+
+.quick-registration .game-window {
+  width: 100%;
+  margin: 0 auto;
+  aspect-ratio: auto;
+}
+
+.quick-registration .game-window img {
+  height: auto;
+  object-fit: contain;
+}
+
 .game-card {
   position: relative;
   padding: 9px;
