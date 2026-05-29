@@ -52,30 +52,19 @@ setInterval(() => {
 }, 1000);
 
 const toastTranslations = {
-  en: { title: 'Claim your bonus', text: 'Register now and get a 500% bonus plus 500FS using this promo code.', code: 'Promo code' },
-  ru: { title: 'Заберите бонус', text: 'Зарегистрируйтесь сейчас и получите бонус 500% и 500FS, используя этот промокод.', code: 'Промокод' },
-  hi: { title: 'अपना बोनस लें', text: 'अभी रजिस्टर करें और इस प्रोमो कोड का उपयोग करके 500% बोनस और 500FS प्राप्त करें।', code: 'प्रोमो कोड' },
-  es: { title: 'Reclama tu bono', text: 'Regístrate ahora y recibe un bono del 500% y 500FS usando este código promocional.', code: 'Código promocional' },
-  fr: { title: 'Obtenez votre bonus', text: 'Inscrivez-vous maintenant et obtenez un bonus de 500% plus 500FS avec ce code promo.', code: 'Code promo' },
-  ar: { title: 'احصل على مكافأتك', text: 'سجّل الآن واحصل على مكافأة 500% و 500FS باستخدام هذا الرمز الترويجي.', code: 'الرمز الترويجي' },
-  it: { title: 'Richiedi il tuo bonus', text: 'Registrati ora e ricevi un bonus del 500% più 500FS usando questo codice promozionale.', code: 'Codice promo' },
-  uz: { title: 'Bonusingizni oling', text: 'Hozir roʻyxatdan oʻting va ushbu promo kod orqali 500% bonus hamda 500FS oling.', code: 'Promo kod' },
-  tg: { title: 'Бонуси худро гиред', text: 'Ҳозир сабти ном кунед ва бо истифода аз ин промокод 500% бонус ва 500FS гиред.', code: 'Промокод' }
+  en: { title: 'Claim your bonus', text: 'Register now and get a 200% bonus plus 200FS using this promo code.', code: 'Promo code' },
+  ru: { title: 'Заберите бонус', text: 'Зарегистрируйтесь сейчас и получите бонус 200% и 200FS, используя этот промокод.', code: 'Промокод' },
+  hi: { title: 'अपना बोनस लें', text: 'अभी रजिस्टर करें और इस प्रोमो код का उपयोग करके 200% бонус и 200FS प्राप्त करें।', code: 'प्रोमो कोड' },
+  es: { title: 'Reclama tu bono', text: 'Regístrate ahora и recibe un bono de 200% и 200FS usando este código promocional.', code: 'Código promocional' },
+  fr: { title: 'Obtenez votre bonus', text: 'Inscrivez-vous maintenant и obtenez un bonus de 200% plus 200FS avec ce code promo.', code: 'Code promo' },
+  ar: { title: 'احصل на مكافأتك', text: 'سجّل الآن واحصل на مكافأة 200% и 200FS باستخدام этот الرمز الترويجي.', code: 'الرمز الترويجي' },
+  it: { title: 'Richiedi il tuo bonus', text: 'Registrati ora и ricevi un bonus de 200% più 200FS usando questo codice promozionale.', code: 'Codice promo' },
+  uz: { title: 'Bonusingizni oling', text: 'Hozir roʻyxatdan оʻting и ushbu promo код orqali 200% bonus hamda 200FS oling.', code: 'Promo код' },
+  tg: { title: 'Бонуси худро гиред', text: 'Ҳозир сабти ном кунед и бо истифода аз ин промокод 200% бонус и 200FS гиред.', code: 'Промокод' }
 };
 
 function detectToastLanguage() {
-  const language = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-
-  if (language.startsWith('ru')) return 'ru';
-  if (language.startsWith('hi')) return 'hi';
-  if (language.startsWith('es')) return 'es';
-  if (language.startsWith('fr')) return 'fr';
-  if (language.startsWith('ar')) return 'ar';
-  if (language.startsWith('it')) return 'it';
-  if (language.startsWith('uz')) return 'uz';
-  if (language.startsWith('tg')) return 'tg';
-
-  return 'en';
+  return 'ru';
 }
 
 function applyToastLanguage() {
@@ -117,9 +106,9 @@ function copyPromo() {
 
   const markCopied = () => {
     if (!btn) return;
-    btn.innerText = 'Copied';
+    btn.innerText = 'Скопировано';
     setTimeout(() => {
-      btn.innerText = 'Copy';
+      btn.innerText = 'Копировать';
     }, 1500);
   };
 
@@ -184,9 +173,9 @@ const fakeWinAmount = document.getElementById('fakeWinAmount');
 
 const fakeWinFlags = ['🇺🇸', '🇬🇧', '🇮🇳', '🇪🇸', '🇫🇷', '🇮🇹', '🇺🇿', '🇹🇯', '🇦🇪', '🇩🇪', '🇧🇷', '🇲🇽'];
 const fakeWinTypes = [
-  { label: 'WIN', min: 120, max: 740 },
-  { label: 'BIG WIN', min: 750, max: 2400 },
-  { label: 'JACKPOT', min: 2500, max: 9800 }
+  { label: 'ВЫИГРЫШ', min: 120, max: 740 },
+  { label: 'БОЛЬШОЙ ВЫИГРЫШ', min: 750, max: 2400 },
+  { label: 'ДЖЕКПОТ', min: 2500, max: 9800 }
 ];
 
 let soundUnlocked = false;
@@ -251,7 +240,7 @@ function showFakeWin() {
 
   fakeWinFlag.textContent = flag;
   fakeWinId.textContent = `ID: ${randomInt(100, 999)}***`;
-  fakeWinAmount.textContent = `${type.label} +$${amount.toLocaleString('en-US')}`;
+  fakeWinAmount.textContent = `${type.label} +$${amount.toLocaleString('ru-RU')}`;
 
   fakeWinToast.classList.remove('big-win', 'jackpot');
   if (type.label === 'BIG WIN') fakeWinToast.classList.add('big-win');
