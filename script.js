@@ -52,15 +52,15 @@ setInterval(() => {
 }, 1000);
 
 const toastTranslations = {
-  en: { title: 'Claim your bonus', text: 'Register now and get a 200% bonus plus 200FS using this promo code.', code: 'Promo code' },
-  ru: { title: 'Заберите бонус', text: 'Зарегистрируйтесь сейчас и получите бонус 200% и 200FS, используя этот промокод.', code: 'Промокод' },
-  hi: { title: 'अपना बोनस लें', text: 'अभी रजिस्टर करें और इस प्रोमो код का उपयोग करके 200% бонус и 200FS प्राप्त करें।', code: 'प्रोमो कोड' },
-  es: { title: 'Reclama tu bono', text: 'Regístrate ahora и recibe un bono de 200% и 200FS usando este código promocional.', code: 'Código promocional' },
-  fr: { title: 'Obtenez votre bonus', text: 'Inscrivez-vous maintenant и obtenez un bonus de 200% plus 200FS avec ce code promo.', code: 'Code promo' },
-  ar: { title: 'احصل на مكافأتك', text: 'سجّل الآن واحصل на مكافأة 200% и 200FS باستخدام этот الرمز الترويجي.', code: 'الرمز الترويجي' },
-  it: { title: 'Richiedi il tuo bonus', text: 'Registrati ora и ricevi un bonus de 200% più 200FS usando questo codice promozionale.', code: 'Codice promo' },
-  uz: { title: 'Bonusingizni oling', text: 'Hozir roʻyxatdan оʻting и ushbu promo код orqali 200% bonus hamda 200FS oling.', code: 'Promo код' },
-  tg: { title: 'Бонуси худро гиред', text: 'Ҳозир сабти ном кунед и бо истифода аз ин промокод 200% бонус и 200FS гиред.', code: 'Промокод' }
+  en: { title: 'Claim your bonus', text: 'Register now and get a 500% bonus plus 50FS using this promo code.', code: 'Promo code' },
+  ru: { title: 'Заберите бонус', text: 'Зарегистрируйтесь сейчас и получите бонус 500% и 50FS, используя этот промокод.', code: 'Промокод' },
+  hi: { title: 'अपना बोनस लें', text: 'अभी रजिस्टर करें और इस प्रोमो код का उपयोग करके 500% бонус и 50FS प्राप्त करें।', code: 'प्रोमो कोड' },
+  es: { title: 'Reclama tu bono', text: 'Regístrate ahora и recibe un bono de 500% и 50FS usando este código promocional.', code: 'Código promocional' },
+  fr: { title: 'Obtenez votre bonus', text: 'Inscrivez-vous maintenant и obtenez un bonus de 500% plus 50FS avec ce code promo.', code: 'Code promo' },
+  ar: { title: 'احصل на مكافأتك', text: 'سجّل الآن واحصل на مكافأة 500% и 50FS باستخدام этот الرمز الترويجي.', code: 'الرمز الترويجي' },
+  it: { title: 'Richiedi il tuo bonus', text: 'Registrati ora и ricevi un bonus de 500% più 50FS usando questo codice promozionale.', code: 'Codice promo' },
+  uz: { title: 'Bonusingizni oling', text: 'Hozir roʻyxatdan оʻting и ushbu promo код orqali 500% bonus hamda 50FS oling.', code: 'Promo код' },
+  tg: { title: 'Бонуси худро гиред', text: 'Ҳозир сабти ном кунед и бо истифода аз ин промокод 500% бонус и 50FS гиред.', code: 'Промокод' }
 };
 
 function detectToastLanguage() {
